@@ -16,6 +16,10 @@ try {
     $router->get('/suppliers', '\App\Controllers\SupplierController@list');
     $router->get('/suppliers/{id}', '\App\Controllers\SupplierController@single');
     $router->post('/suppliers/{id}', '\App\Controllers\SupplierController@update');
+    $router->get('/customers', '\App\Controllers\CustomerController@list');
+    $router->get('/customers/{id}', '\App\Controllers\CustomerController@single');
+    $router->post('/customers/{id}', '\App\Controllers\CustomerController@update');
+
 
     // Run it!
     $router->run();
